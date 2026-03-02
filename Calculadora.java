@@ -31,4 +31,11 @@ public class Calculadora {
     public int multiplicar() {
         return num1 * num2;
     }
+
+    public double dividir() {
+        if (num2 == 0) {
+            throw new ArithmeticException("No se puede dividir entre cero");
+        }
+        return (double) num1 / num2;
+    }
 }
